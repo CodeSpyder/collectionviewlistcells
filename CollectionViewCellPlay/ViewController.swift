@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 private enum Section: Hashable {
     case main
 }
@@ -58,9 +56,7 @@ extension ViewController {
     private func createLayout() -> UICollectionViewLayout {
         var config = UICollectionLayoutListConfiguration(appearance: .grouped)
         config.headerMode = .firstItemInSection
-//        config.backgroundColor = UIColor(named: "AppWhite")
         config.backgroundColor = .systemGray5
-//        config.backgroundColor = .white
         config.showsSeparators = false
         var separatorConfig = UIListSeparatorConfiguration(listAppearance: .grouped)
         separatorConfig.topSeparatorInsets = .init(top: 10.0, leading: 0, bottom: 2.0, trailing: 0)
@@ -83,12 +79,10 @@ extension ViewController {
             var content = UIListContentConfiguration.groupedHeader()
             content.textProperties.color = .black
             content.text = item.title
-//            content.text = ""
             cell.contentConfiguration = content
             var backgroundConfig = UIBackgroundConfiguration.listGroupedCell()
             // Set a white background color to use the cell's tint color.
-            backgroundConfig.backgroundColor = .systemGray5
-//            backgroundConfig.backgroundColor = .white
+            backgroundConfig.backgroundColor = .white
             cell.backgroundConfiguration = backgroundConfig
         }
         
@@ -102,17 +96,13 @@ extension ViewController {
             content.secondaryTextProperties.font = UIFont.preferredFont(forTextStyle: .subheadline)
             content.secondaryTextProperties.color = .white
             content.secondaryTextProperties.alignment = .center
-//            content.image = UIImage(named: "bus-side")
-//            content.imageProperties.cornerRadius = 10.0
-//            content.imageProperties.maximumSize = CGSize(width: 50, height: 50)
             content.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 13, leading: 2, bottom: 13, trailing: 2)
             cell.contentConfiguration = content
             var backgroundConfig = UIBackgroundConfiguration.listGroupedCell()
-            // Set a green background color to use the cell's tint color.
+            
             backgroundConfig.backgroundColor = self.copper
             if indexPath.row == 2 {
                 backgroundConfig.backgroundColor = UIColor(named: "AppGreen")
-//                cell.contentView.backgroundColor = .blue
             }
             backgroundConfig.cornerRadius = 10
             backgroundConfig.backgroundInsets = NSDirectionalEdgeInsets(top: 5, leading: 2, bottom: 5, trailing: 2)
