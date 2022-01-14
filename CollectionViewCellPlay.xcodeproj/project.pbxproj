@@ -13,6 +13,7 @@
 		CBB500352784A3B800C6906C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB500332784A3B800C6906C /* Main.storyboard */; };
 		CBB500372784A3B900C6906C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB500362784A3B900C6906C /* Assets.xcassets */; };
 		CBB5003A2784A3B900C6906C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB500382784A3B900C6906C /* LaunchScreen.storyboard */; };
+		CBB500422784C11A00C6906C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB500412784C11A00C6906C /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CBB500362784A3B900C6906C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB500392784A3B900C6906C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB5003B2784A3B900C6906C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB500412784C11A00C6906C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CBB500362784A3B900C6906C /* Assets.xcassets */,
 				CBB500382784A3B900C6906C /* LaunchScreen.storyboard */,
 				CBB5003B2784A3B900C6906C /* Info.plist */,
+				CBB500412784C11A00C6906C /* Colors.xcassets */,
 			);
 			path = CollectionViewCellPlay;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB5003A2784A3B900C6906C /* LaunchScreen.storyboard in Resources */,
+				CBB500422784C11A00C6906C /* Colors.xcassets in Resources */,
 				CBB500372784A3B900C6906C /* Assets.xcassets in Resources */,
 				CBB500352784A3B800C6906C /* Main.storyboard in Resources */,
 			);
