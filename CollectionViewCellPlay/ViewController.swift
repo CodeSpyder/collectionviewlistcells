@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CollectionViewCellPlay
 //
-//  Created by Hollis on 1/4/22.
+//  Created by CodeSpyder on 1/4/22.
 //
 
 import UIKit
@@ -11,7 +11,8 @@ private enum Section: Hashable {
     case main
 }
 
-private struct Item: Hashable {
+private struct Item {
+    let uuid = UUID()
     let title: String?
     let description: String?
     let image: String?
@@ -20,7 +21,22 @@ private struct Item: Hashable {
         self.description = description
         self.image = image
     }
-    private let identifier = UUID()
+}
+
+extension Item: Hashable {
+    static func == (lhs: Item, rhs: Item) -> Bool {
+        return lhs.title == rhs.title
+        && lhs.description == rhs.description
+        && lhs.image == rhs.image
+        && lhs.uuid == rhs.uuid
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(title)
+        hasher.combine(description)
+        hasher.combine(image)
+        hasher.combine(uuid)
+    }
 }
 
 class ViewController: UIViewController {
